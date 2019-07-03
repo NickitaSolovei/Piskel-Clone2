@@ -1,0 +1,89 @@
+
+.tools-block {
+    flex: 0 0 110px;
+    background-color: gainsboro;
+    /* height: 500px; */
+    /* height: 100%; */
+    border: 1px solid black;
+
+    align-items: stretch;
+}
+
+.tools-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.tool-icon {    
+    flex: 0 0 50px;
+    height: 50px;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.tool-icon p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.choose-color {
+
+    display: flex;
+}
+
+.primary-color {
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 auto;
+}
+
+.secondary-color {
+    width: 40px;
+    height: 40px;
+    /*border: 1px solid black;*/
+    flex: 0 0 auto;
+}
+
+
+.selectedTool {
+    border: 1px solid yellow;
+}
+
+
+.color-picker-first {
+    padding: 0;
+    padding-top: 0px;
+
+    border: 0px solid red;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.color-picker-second {
+    padding: 0;
+    padding-top: 0px;
+
+    border: 0px solid red;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.choose-color p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.tooltip-class {
+    position: absolute;
+    border: 1px solid gray;
+    background-color: green;
+
+    max-width: 120px;
+
+    margin-left: 50px;
+}

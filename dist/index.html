@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Piscel-clone</title>
+    <link rel="stylesheet" href="src/css/font-awesome/css/font-awesome.min.css">
+  <link href="/main.css" rel="stylesheet"></head>
+  <body >
+    <div class="big-block" >
+      <div class="tools-block" >
+        <div class="tool-icon pen selectedTool">
+          <p>pen</p>
+        </div>
+        <div class="tool-icon vertical-mirror-pen">
+          <p>vertical mirror pen</p>
+        </div>
+        <div class="tool-icon paint-bucket">
+          <p>paint bucket</p>
+        </div>
+        <div class="tool-icon paint-All-pixels">
+          <p>paint all pixels of the same color</p>
+        </div>
+        <div class="tool-icon eraser">
+          <p>eraser</p>
+        </div>
+        <div class="tool-icon stroke">
+          <p>stroke</p>
+        </div>
+        <div class="tool-icon move">
+          <p>move</p>
+        </div>
+        <div class="tool-icon rectangle">
+          <p>rectangle</p>
+        </div>
+        <div class="tool-icon circle">
+          <p>circle</p>
+        </div>
+        <div class="tool-icon lighten">
+          <p>lighten</p>
+        </div>
+        <div class="tool-icon dithering">
+          <p>dithering</p>
+        </div>
+        <div class="tool-icon color-picker">
+          <p>color picker</p>
+        </div>
+
+        <div class="choose-color">
+          <div class="primary-color">
+            <p>first</p>
+            <input class="color-picker-first" type="color">
+          </div>
+          <div class="secondary-color">
+            <p>second</p>
+            <input class="color-picker-second" type="color">
+          </div>
+        </div>
+
+        <!-- MODAL WINDOW -->
+        <button id="myBtn">Keyboard shortcuts</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Keyboard shortcuts</h2>
+            </div>
+            <div class="modal-body">
+              <div class="key-first-column">
+                <div class="key-icon">
+                  <span>P</span>
+                  pen tool
+                </div>
+                <div class="key-icon">
+                  <span>B</span>
+                  paint bucket
+                </div>
+                <div class="key-icon">
+                  <span>V</span>
+                  vertical mirror pen
+                </div>
+                <div class="key-icon">
+                  <span>A</span>
+                  paint all pixels of the same
+                </div>
+                <div class="key-icon">
+                  <span>E</span>
+                  eraser
+                </div>
+                <div class="key-icon">
+                  <span>L</span>
+                  stroke
+                </div>
+
+                <div class="key-icon">
+                  <span>M</span>
+                  move
+                </div>
+                <div class="key-icon">
+                  <span>R</span>
+                  rectangle
+                </div>
+                <div class="key-icon">
+                  <span>C</span>
+                  circle
+                </div>
+                <div class="key-icon">
+                  <span>U</span>
+                  lighten
+                </div>
+                <div class="key-icon">
+                  <span>T</span>
+                  dithering
+                </div>
+                <div class="key-icon">
+                  <span>O</span>
+                  color picker
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <h3></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgs-block" onmousedown="return false" onselectstart="return false">
+        
+        <div class="frames-imgs">
+          <div class="img-wrap">
+            move
+            <img id="" class="img-frame-left selected">
+            <div class="but-img-wrap">
+              <button class="delete-frame">del</button>
+              <button class="copy-frame">copy</button>
+            </div>
+          </div>
+        </div>
+        <button id="add-frame">add new frame</button>
+      </div>
+
+      <div class="canvas-main-block">
+        <canvas id="canvasMain" width="320" height="320"></canvas>
+      </div>
+
+      <div class="animation-block">
+        animation
+        <canvas id="canvas-animation" width="160" height="160"></canvas>
+
+        <input type="range" min="1" max="24" id="lineFPS" value="0">
+        <div id="displayFPS">1 FPS</div>
+        <button id="button-fullScreen">fullscreen</button>
+
+        <div>resize</div>
+        <button id="resize32" class="button-resize">32x32</button>
+        <button id="resize64" class="button-resize">64x64</button>
+        <button id="resize128" class="button-resize">128x128</button>
+      </div>
+    </div>
+  <script type="text/javascript" src="/bundle.js"></script></body>
+</html>

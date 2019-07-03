@@ -1,0 +1,11 @@
+
+function componentToHex(c) {
+    const hex = c.toString(16);
+    return hex.length === 1 ? `0${hex}` : hex;
+}
+
+function rgb2hex(r, g, b) {
+    return `#${componentToHex(r)}${componentToHex(g)}${componentToHex(b)}`;
+}
+
+export { rgb2hex };

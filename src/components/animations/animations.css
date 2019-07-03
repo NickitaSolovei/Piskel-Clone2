@@ -1,0 +1,15 @@
+.animation-block {
+    padding: 10px;
+    flex: 0 0 200px;
+    background-color: gainsboro;
+    /* height: 500px; */
+    border: 1px solid black;
+
+    align-items: stretch;
+}
+
+#canvas-animation {
+    border: 2px solid gray;
+
+    background-color: black;
+}
